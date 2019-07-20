@@ -1,6 +1,7 @@
 class Node {
-  constructor(data) {
+  constructor(data, next = null) {
     this.data = data;
+    this.next = next
   }
 }
 
@@ -30,3 +31,14 @@ class LinkedList {
     this.head = prev;
   }
 }
+
+const list = new LinkedList
+list.insertFirst(2)
+list.insertFirst(3)
+list.insertFirst(4)
+list.reverse(2)
+
+console.log(list.head.next)
+
+2,3,4
+3,2,4
